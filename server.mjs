@@ -21,6 +21,4 @@ app.listen(PORT, () => {
 // seed route
 app.get(`/`, async(req, res)=>{
 
-}try
-
-
+});

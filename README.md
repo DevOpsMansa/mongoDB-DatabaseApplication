@@ -101,12 +101,11 @@ npm install express mongoose body-parser
   Create PATCH/PUT routes for data updates.
   Create DELETE routes for data deletion.
 
-7. Implement Data Validation Route (Optional):
-  Create a route to test MongoDB data validation.
+7. Implement Data Validation Route (If vlidation is dome in mongoDB, share screenshot) OR Create a route to test MongoDB data validation.
 
 8. Populate Collections with Sample Data:
+  Use application to insert sample data into each collection. Ensure at least five sample documents per collection.
 
-  Use your application to insert sample data into each collection. Ensure at least five sample documents per collection.
 9. Code Organization:
   Organize your code into modular files (e.g., separate files for routes, models, database connection).
   Use a reasonable folder structure.
@@ -115,6 +114,5 @@ npm install express mongoose body-parser
 Implement error handling for database operations and route handling.
 
 11. Run the Application:
-
   Make sure your MongoDB server is running.
   Start your Node.js application and test the routes using a tool like Postman or by creating a simple frontend.
