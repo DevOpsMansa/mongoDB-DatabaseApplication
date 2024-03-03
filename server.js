@@ -175,7 +175,6 @@ app.patch('/comments/:id', async (req, res) => {
     if (!comment) {
       return res.status(404).send('Comment not found');
     }
-
     res.json(comment);
   } catch (error) {
     res.status(400).json({ error: error.message });
@@ -191,7 +190,6 @@ app.delete('/comments/:id', async (req, res) => {
     if (!comment) {
       return res.status(404).send('Comment not found');
     }
-
     res.json(comment);
   } catch (error) {
     res.status(400).json({ error: error.message });
