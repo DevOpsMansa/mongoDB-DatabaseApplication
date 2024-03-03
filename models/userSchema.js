@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+
 // Define User schema
 const userSchema = new mongoose.Schema({
   name: { 
@@ -29,6 +30,7 @@ const userSchema = new mongoose.Schema({
 // Index for frequently queried 'name' field == for the `User` collection, an index is created on the name field since it's frequently queried
 userSchema.index({ name: 1 });
 
+// Create MongoDB Models
 const User = mongoose.model('User', userSchema);
 
 // Example usage
@@ -46,3 +48,12 @@ newUser.save()
   .catch((error) => {
     console.error('Error saving user:', error.message);
   });
+
+  module.exports = User;
+
+
+
+//Note:
+  //The `name` field is required, and additional validations include trimming whitespace, enforcing minimum and maximum lengths, and using a custom regular expression to allow only letters and spaces.
+  // The `email` field is required, unique, and has a custom validation rule for email format using a regular expression.
+
