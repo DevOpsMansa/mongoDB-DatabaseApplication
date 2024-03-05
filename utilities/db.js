@@ -1,6 +1,3 @@
-// const { db } = require("../models/userSchema");
-
-// const db = mongoose.connection;
 
 // Sample data for users
 const usersData = [
