@@ -1,4 +1,6 @@
+//imports
 const mongoose = require('mongoose');
+// import mongoose from 'mongoose';
 
 
 // Define User schema
@@ -24,7 +26,9 @@ const userSchema = new mongoose.Schema({
         /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(value), // Email format validation
       message: 'Invalid email address',
   },
-  // Other user fields...
+
+  }
+//   // Other user fields...
 });
 
 // Index for frequently queried 'name' field == for the `User` collection, an index is created on the name field since it's frequently queried
@@ -51,9 +55,10 @@ newUser.save()
 
   module.exports = User;
 
+  // export default mongoose.model('User', userSchema);
+
 
 
 //Note:
   //The `name` field is required, and additional validations include trimming whitespace, enforcing minimum and maximum lengths, and using a custom regular expression to allow only letters and spaces.
   // The `email` field is required, unique, and has a custom validation rule for email format using a regular expression.
-

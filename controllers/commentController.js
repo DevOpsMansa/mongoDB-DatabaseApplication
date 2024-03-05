@@ -1,5 +1,7 @@
 //imports commentSchema
-const User = require('../models/commentSchema');
+const Comment= require('../models/commentSchema');
+
+await mongoose.connect(process.env.MONGO_URI);
 
 // Create MongoDB Models
 const Comment = mongoose.model('Comment', commentSchema);
@@ -55,3 +57,5 @@ app.get('/comments', async (req, res) => {
       res.status(400).json({ error: error.message });
     }
   });
+
+  

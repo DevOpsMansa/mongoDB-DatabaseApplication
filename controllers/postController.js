@@ -1,5 +1,7 @@
 //imports postSchema
-const User = require('../models/postSchema');
+const Post = require('../models/postSchema');
+
+await mongoose.connect(process.env.MONGO_URI);
 
 // Create MongoDB Models
 const Post = mongoose.model('Post', postSchema);
@@ -58,3 +60,4 @@ app.get('/posts', async (req, res) => {
   });
 
   
+
