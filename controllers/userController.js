@@ -3,6 +3,9 @@ const User = require("../models/userSchema");
 
 await mongoose.connect(process.env.MONGO_URI);
 
+// Create MongoDB Models
+const User = mongoose.model('User', userSchema);
+
 // GET all users == `/users`, it retrieves all users from the User collection using User.find().
 app.get("/users", async (req, res) => {
   try {

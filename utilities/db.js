@@ -22,12 +22,12 @@ const usersData = [
   
   // Sample data for comments
   const commentsData = [
-    { postId: null /* Populate with actual Post _id later */, text: 'Great post!' },
-    { postId: null, text: 'I enjoyed reading this.' },
-    { postId: null, text: 'Got to love the humor,looking forward to more content.' },
-    { postId: null, text: 'Nice insights.' },
-    { postId: null, text: 'Well written!' },
+    { postId: 1, text: 'Great post!' },
+    { postId: 2, text: 'I enjoyed reading this.' },
+    { postId: 3, text: 'Got to love the humor,looking forward to more content.' },
+    { postId: 4, text: 'Nice insights.' },
+    { postId: 5, text: 'Well written!' },
   ];
 
-module.exports = {usersData, postsData,commentsData};
+module.exports = {usersData, postsData, commentsData};
 
