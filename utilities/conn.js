@@ -22,5 +22,6 @@ try {
 }
 
 // export db 
-module.exports = db;
+module.exports = conn;
+
 
